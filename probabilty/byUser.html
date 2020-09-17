@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Statistics by User Data</title>
+    <link rel="shortcut icon" href="img/logo_pHS_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/byFile.css">
+    <link rel="stylesheet" href="css/histogram.css">
+    <link rel="stylesheet" href="css/user/user.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo_transparent.png" alt="logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="byFile.html">By File</a></li>
+                <li><a href="byUser.html" class="active">By User Data</a></li>
+                <li><a href="groupMembers.html">Group Members</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="noOfEntries" class="selectColumn">
+            <label for="">Enter Name of Data</label> <br>
+            <input type="text" name="nameInput" id="nameInput">
+            <label for="">Enter Number of Entries</label> <br>
+            <input type="text" name="entriesInput" id="entriesInput">
+            <button type="submit" class="button" id="entriesButton">Send</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="userInputs">
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="frequencyTablesContainer" id="frequencyTablesContainer">
+            <!-- <div id="frequencyTable" class="tableContainer">
+                    <h2>Frequency Table</h2>
+                    <table id="freqTab">
+                        <tr>
+                            <th>Class</th>
+                            <th>Frequency</th>
+                            <th>Commulative Frequency</th>
+                            <th>Relative Frequency</th>
+                            <th>Relative Frequency %</th>
+                            <th>Commulative Relative Frequency</th>
+                        </tr>
+                        <tr>
+                            <th>Class</th>
+                            <th>Frequency</th>
+                            <th>Commulative Frequency</th>
+                            <th>Relative Frequency</th>
+                            <th>Relative Frequency %</th>
+                            <th>Commulative Relative Frequency</th>
+                        </tr>
+                    </table>
+                </div> -->
+        </div>
+    </div>
+
+
+    <div class="bgBorder otherCharts">
+        <div class="container ">
+            <button type="submit" class="button" id="createMutipleButton">Create Mutiple Bar Chart</button>
+            <button type="submit" class="button" id="createComponentButton">Create Component Bar Chart</button>
+            <button type="submit" class="button" id="createPieButton">Create Pie Chart</button>
+        </div>
+    </div>
+
+    <!-- Multiple Bar Chart -->
+    <div id="multipleBarChart">
+        <div class="container">
+            <div id="multipleChartDiv" class="selectColumn">
+                <label for="">Enter Number of Entries for Multiple Bar Chart</label> <br>
+                <input type="text" name="multipleChartInput" id="multipleChartInput">
+                <button type="submit" class="button" id="multipleChartButton">Send</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="multipleChartInputsEntries" class="threeColumn">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="multipleChartGraph">
+                <!-- <canvas id="densityChart" width="600" height="600"></canvas> -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Component Bar Chart -->
+    <div id="componentBarChart">
+        <div class="container">
+            <div id="componentBarDiv" class="selectColumn">
+                <label for="">Enter Number of Entries for Component Bar Chart</label> <br>
+                <input type="text" name="componentBarInput" id="componentBarInput">
+                <button type="submit" class="button" id="componentBarButton">Send</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="componentBarInputsEntries" class="threeColumn">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="componentBarGraph">
+                <!-- <canvas id="componentChart" width="600" height="600"></canvas> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Pie Chart -->
+    <div id=" ">
+        <div class="container">
+            <div id="pieDiv" class="selectColumn">
+                <label for="">Enter Number of Entries for Pie Chart</label> <br>
+                <input type="text" name="pieInput" id="pieInput">
+                <button type="submit" class="button" id="pieButton">Send</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="pieInputsEntries" class="twoColumn">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="pieGraph">
+                <!-- <canvas id="componentChart" width="600" height="600"></canvas> -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/meanAndStandardDeviation.js"></script>
+    <script src="js/user/mutipleChart.js"></script>
+    <script src="js/user/componentChart.js"></script>
+    <script src="js/d3.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/chartjs.js"></script>
+    <script src="js/histogram.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/user/pieChart.js"></script>
+    <script src="js/user/functions.js"></script>
+</body>
+
+</html>

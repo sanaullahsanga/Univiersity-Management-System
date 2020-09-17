@@ -1,0 +1,37 @@
+<?php 
+
+/////////////////////////////////////////////////////////////////////connecting to dbwp////////////////////////////////////////////////////////////////////////////
+
+$server_name = "localhost";
+$user_name = "root";
+$password = "";
+$database = "dbwp";
+$conn = mysqli_connect($server_name, $user_name, $password, $database);
+if(!$conn)
+	echo "NOT CONNECTED";
+
+///////////////////////////////////////////////////////////////////////////Start////////////////////////////////////////////////////////////////////////////////////
+
+                      /////////////////////////////////////////Updation into Student_info///////////////////////////////////////////
+
+                      $var3="update login_user set  user_name='$_POST[uname]' ,  pin= '$_POST[Pasword]' where id= $_POST[id]";
+                      //echo $var3;
+                      $sql=mysqli_query($conn,$var3);
+                      if(!$sql)
+                      {
+                        echo "Data not inserted";
+                      }
+                      else
+                      {
+                        header("location:show_uer.php");
+                      }
+                  
+                      
+/////////////////////////////////////////////////////////////////////////////End////////////////////////////////////////////////////////////////////////////////////
+    
+?>
+
+
+
+
+

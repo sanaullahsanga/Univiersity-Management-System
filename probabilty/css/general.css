@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin-bottom: 50vh;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+input {
+  border: 0;
+  outline: none;
+  padding: 1rem;
+}
+
+input[type=text], input {
+  border: 1px solid blue;
+}
+
+input[type=file] {
+  -webkit-appearance: none;
+  width: auto;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid blue;
+}
+
+input[type=file]:before {
+  content: "\f093  Select File";
+  font-family: FontAwesome;
+  color: blue;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+input[type=file]:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: blue;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+input[type=file]:hover:after {
+  bottom: 0px;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  min-width: 150px;
+  font-size: 15px;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid blue;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -5px;
+  left: 0;
+  background: blue;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.button:hover:before {
+  bottom: 0px;
+}
+
+.bgBorder {
+  border-top: 5px solid blue;
+  border-bottom: 5px solid blue;
+  margin: 1rem 0;
+}
+
+.header {
+  background: #ffffff;
+  border-bottom: 5px solid blue;
+  overflow: hidden;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .logo img {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scale(1.5) translateY(5px);
+          transform: scale(1.5) translateY(5px);
+}
+
+header .container .logo img:hover {
+  -webkit-transform: scale(1.7) translateY(5px);
+          transform: scale(1.7) translateY(5px);
+}
+
+header .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container ul li a {
+  display: inline-block;
+  padding: 1rem;
+  width: 150px;
+  margin: 0 1rem;
+  text-align: center;
+  border: 1px solid blue;
+  position: relative;
+  overflow: hidden;
+}
+
+header .container ul li a:before {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  bottom: -10px;
+  left: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background:blue;
+}
+
+header .container ul li a.active:before, header .container ul li a:hover:before {
+  bottom: 0;
+}
+
+header .container ul:last-child a {
+  margin-right: 0;
+}
+
+#summation {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  padding: 2px;
+}
+
+.frequencyTablesContainer {
+  text-align: center;
+}
+
+.frequencyTablesContainer h2 {
+  padding: 2rem 0;
+  color: #0a91ab;
+}
+
+.frequencyTablesContainer .tableContainer {
+  height: auto;
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=general.css.map */

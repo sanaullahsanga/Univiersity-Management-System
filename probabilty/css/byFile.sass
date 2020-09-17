@@ -1,0 +1,57 @@
+$yellow : #ffa800
+$blue1: #6dbdcd
+$blue2: #3ca7bc
+$blue3: #0a91ab
+    
+
+
+.selectDataFile
+    padding: 2rem 0
+    display: flex
+    align-items: center
+    span
+        margin-right: 1rem
+
+
+.fileData
+    border: 1px solid $blue1
+    text-align: center
+    padding: 1rem
+    padding-bottom: 2rem
+    h2
+        padding: 2rem
+        color: $blue3
+        
+.tableContainer
+    width: 100%
+    height: 400px
+    overflow: auto
+
+table
+    border-collapse: collapse
+    width: 100%
+    tr
+        width: 100%
+        td,th
+            padding: 0.5rem 1rem
+            border: 1px solid $blue1
+        
+        &:first-child
+            background: $blue3
+            color: #ffffff
+            td,th
+                border: 1px solid $blue2
+                font-weight: bold
+                padding: 1rem
+                font-size: 18px
+
+
+
+.selectColumn
+    display: flex
+    align-items: center
+    padding: 2rem 0
+    position: relative
+    input
+        margin: 0 1rem
+    

@@ -1,0 +1,73 @@
+.selectDataFile {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selectDataFile span {
+  margin-right: 1rem;
+}
+
+.fileData {
+  border: 1px solid #6dbdcd;
+  text-align: center;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+.fileData h2 {
+  padding: 2rem;
+  color: #0a91ab;
+}
+
+.tableContainer {
+  width: 100%;
+  height: 400px;
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table tr {
+  width: 100%;
+}
+
+table tr td, table tr th {
+  padding: 0.5rem 1rem;
+  border: 1px solid #6dbdcd;
+}
+
+table tr:first-child {
+  background: #0a91ab;
+  color: #ffffff;
+}
+
+table tr:first-child td, table tr:first-child th {
+  border: 1px solid #3ca7bc;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 18px;
+}
+
+.selectColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.selectColumn input {
+  margin: 0 1rem;
+}
+/*# sourceMappingURL=byFile.css.map */

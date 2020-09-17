@@ -1,0 +1,204 @@
+$yellow : #ffa800
+$blue1: #6dbdcd
+$blue2: #3ca7bc
+$blue3: #0a91ab
+
+
+*
+    margin: 0
+    padding: 0
+    font-family: sans-serif
+    box-sizing: border-box 
+body
+    margin-bottom: 50vh
+
+.logo
+    width: 100px
+    img
+        width: 100%
+
+
+.container
+    max-width: 1200px
+    margin: auto
+
+li
+    list-style: none
+
+a,a:hover
+    text-decoration: none
+    color: #000000
+
+input
+    border: 0
+    outline: none
+    padding: 1rem
+
+
+input[type=text],input
+    border: 1px solid $yellow
+
+input[type=file]
+    -webkit-appearance: none
+    width: auto
+    position: relative
+    text-align: center
+    overflow: hidden
+    border: 1px solid $yellow
+    &:before
+        content: "\f093  Select File"
+        font-family: FontAwesome
+        color: darken($yellow,5)
+        position: absolute
+        top: 0
+        left: -10px
+        width: 100%
+        background: #fff
+        text-align: center
+        font-size: 1.2rem
+        padding: 1rem
+        text-align: center
+        cursor: pointer
+    &:after
+        content: ''
+        position: absolute
+        bottom: -5px
+        left: 0
+        width: 100%
+        height: 5px
+        background: $yellow
+        transition: all 0.5s ease        
+
+    &:hover:after
+        bottom: 0px
+
+
+.button
+    border: 0
+    outline: none
+    min-width: 150px
+    font-size: 15px
+    padding: 1rem
+    background: #ffffff
+    border: 1px solid $yellow
+    position: relative
+    cursor: pointer
+    overflow: hidden
+    &:before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 5px
+        bottom: -5px
+        left: 0
+        background: $yellow
+        transition: all 0.5s ease
+    &:hover:before
+        bottom: 0px
+
+.bgBorder
+    border-top: 5px solid $yellow
+    border-bottom: 5px solid $yellow
+    margin: 1rem 0
+
+header
+    background: #ffffff
+    border-bottom: 5px solid $yellow
+    overflow: hidden
+    .container
+        display: flex
+        justify-content: space-between
+
+        .logo
+            img
+                transition: all 0.5s ease
+                transform: scale(1.5) translateY(5px)
+                &:hover
+                    transform: scale(1.7) translateY(5px)
+
+        ul
+            display: flex
+            align-items: center
+            li
+                a
+                    display: inline-block
+                    padding: 1rem
+                    width: 150px
+                    margin: 0 1rem
+                    text-align: center
+                    border: 1px solid $yellow
+                    position: relative
+                    overflow: hidden  
+                        
+                    &:before
+                        content: ''
+                        position: absolute
+                        height: 5px
+                        width: 100%
+                        bottom: -5px
+                        left: 0
+                        transition: all 0.5s ease                  
+                        background: $yellow
+                    
+                    &.active:before,
+                    &:hover:before
+                        bottom: 0
+
+
+            &:last-child
+                a
+                    margin-right: 0
+
+
+
+
+
+
+
+#summation
+    display: inline-block
+    width: 20px
+    height: 20px
+    margin-right: 10px
+    margin-bottom: 4px
+    padding: 2px
+
+
+.frequencyTablesContainer
+    text-align: center
+    h2
+        padding: 2rem 0
+        color: $blue3
+    
+    .tableContainer
+        height: auto
+        margin-bottom: 2rem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

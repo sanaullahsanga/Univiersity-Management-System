@@ -1,0 +1,88 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+input {
+  border: 0;
+  outline: none;
+  padding: 1rem;
+}
+input[type=text], input {
+  border: 1px solid #ffa800;
+}
+
+body {
+  background: url("main.jpg");
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.main-content {
+  border-radius: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 3px 3px 0.1rem rgba(255, 255, 0, 0.5), 5px 5px 1px rgba(0, 0, 0, 0.3), 7px 7px 0.3rem #fbb11c, 9px 9px 2px rgba(0, 0, 0, 0.5), 11px 11px 0.3rem #ffb11c, 13px 13px 0.1rem rgba(255, 168, 0, 0.5);
+          box-shadow: 3px 3px 0.1rem rgba(255, 168, 0, 0.5), 5px 5px 1px rgba(0, 0, 0, 0.3), 7px 7px 0.3rem #fbb11c, 9px 9px 2px rgba(0, 0, 0, 0.5), 11px 11px 0.3rem #ffb11c, 13px 13px 0.1rem rgba(255, 168, 0, 0.5);
+  width: 800px;
+  height: 420px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.main-content h1 {
+  font-size: 3rem;
+}
+
+.main-content h1 span {
+  font-weight: bold;
+  color: #ffa800;
+}
+.main-content .navigation {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.main-content .navigation span {
+  padding: 1rem;
+   
+  display: inline-block;
+}
+
+.main-content .navigation a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+  background: #ffa800;
+  color: #fff;
+  width: 90px;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.main-content:hover .navigation a:hover {
+  background: rgba(255, 168, 0, 0.5);
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+
+

@@ -1,0 +1,68 @@
+$yellow : #ffa800
+$blue1: #6dbdcd
+$blue2: #3ca7bc
+$blue3: #0a91ab
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    
+body
+    margin: 0
+    
+.group 
+    width: 1200px
+    margin-top: 8rem
+    display: grid
+    grid-template-columns: repeat(3,auto)
+    box-sizing: border-box
+    grid-gap: 2rem
+    .groupMember
+        display: flex
+        width: 100%
+
+        .img
+            width: 300px
+            height: 200px
+            overflow: hidden
+            transition: all 0.5s ease-in
+            img
+                width: 100%
+                height: 100%
+                transition: all 0.5s ease-in-out
+        
+        .info
+            flex: 1 1 100% 
+            border: 2px solid $yellow
+            border-left: 0 
+            position: relative
+
+            div
+                position: absolute
+                padding-left: 0.51rem
+                width: 100%
+                left: 50%
+                top: 50%
+                transform: translate(-50%,-50%) 
+
+            p
+                padding: 1rem 0rem 
+                span
+                    &:first-child 
+                        display: inline-block
+                        width: 60px !important
+                        margin-right: 1rem
+                    &:last-child
+                        color: $blue3
+                        font-weight: bold
+                        text-align: right
+                        display: block
+                        padding-right: 1rem
+
+
+.groupMember    
+    &:hover
+        .img 
+            img
+                transform: scale(1.5) 

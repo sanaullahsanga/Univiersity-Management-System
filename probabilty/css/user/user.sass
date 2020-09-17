@@ -1,0 +1,43 @@
+body
+    margin: 0
+    padding-bottom: 10rem
+    
+    
+#userInputs
+    display: grid
+    grid-template-columns: repeat(5,1fr)
+    grid-gap: 2rem
+ 
+
+.otherCharts
+    padding: 1rem 0
+    margin-top: 18rem
+
+.threeColumn,
+.twoColumn
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-gap: 2rem
+
+    input
+        width: 100%
+        margin-bottom: 0.3rem
+    
+    p
+        text-align: center
+        margin-bottom: 1rem
+
+    button
+        max-width: 200px
+
+.twoColumn
+    grid-template-columns: repeat(2,1fr)
+
+
+#densityChart,
+#componentChart,
+#pieChart
+    width: 600px !important
+    height: 600px !important
+    display: block
+    margin: auto

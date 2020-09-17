@@ -1,0 +1,19 @@
+.bar {
+  fill: steelblue;
+  shape-rendering: crispEdges;
+}
+
+.bar text {
+  fill: #000;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.title {
+  font-size: 18px;
+}
+/*# sourceMappingURL=histogram.css.map */

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Statistics by File Data</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="img/logo_pHS_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/byFile.css">
+    <link rel="stylesheet" href="css/histogram.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo_transparent.png" alt="logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="byFile.html" class="active">By File</a></li>
+                <li><a href="byUser.html">By User Data</a></li>
+                <li><a href="groupMembers.html">Group Members</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="selectDataFile">
+            <span>Select Your .csv file to perform statistical operations. </span>
+            <input type="file" id="files" name="files[]" multiple />
+        </div>
+    </div>
+
+    <div id="data" class="fileData">
+        <h2 id="filename">Data</h2>
+        <div class="tableContainer">
+            <table id="table"></table>
+        </div>
+    </div>
+
+    <div class="bgBorder">
+        <div class="container">
+            <div id="ftColumn" class="selectColumn">
+                <label for="">Enter Column Name to Find Frequency Table</label> <br>
+                <input type="text" name="column" id="column">
+                <!-- <button type="submit" class="button" id="fqFind">Send</button> -->
+                <button type="submit" class="button" id="calculateFrequencyTable">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="frequencyTablesContainer" id="frequencyTablesContainer">
+            <!-- <div id="frequencyTable" class="tableContainer">
+                <h2>Frequency Table</h2>
+                <table id="freqTab">
+                    <tr>
+                        <th>Class</th>
+                        <th>Frequency</th>
+                        <th>Commulative Frequency</th>
+                        <th>Relative Frequency</th>
+                        <th>Relative Frequency %</th>
+                        <th>Commulative Relative Frequency</th>
+                    </tr>
+                    <tr>
+                        <th>Class</th>
+                        <th>Frequency</th>
+                        <th>Commulative Frequency</th>
+                        <th>Relative Frequency</th>
+                        <th>Relative Frequency %</th>
+                        <th>Commulative Relative Frequency</th>
+                    </tr>
+                </table>
+            </div> -->
+            <!-- <table id="freqTab">
+                <tr>
+                    <th>Mean</th>
+                    <th>Standard Deviation</th>
+                </tr>
+                <tr>
+                    <td id="mean"></td>
+                    <td id="sd"></td>
+                </tr>
+            </table> -->
+        </div>
+    </div>
+
+
+    <script src="js/variables.js"></script>
+    <script src="js/d3.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/chartjs.js"></script>
+    <script src="js/meanAndStandardDeviation.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/histogram.js"></script> 
+</body>
+
+</html>

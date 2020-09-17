@@ -1,0 +1,82 @@
+*
+    margin: 0
+    padding: 0
+    font-family: sans-serif
+    box-sizing: border-box
+    font-weight: 200
+
+body 
+    background: url('../img/bg.jpg')
+    width: 100vw
+    height: 100vh
+    overflow: hidden
+    background-size: 100%
+    background-position: top
+    background-repeat: no-repeat
+
+
+
+
+header
+    background: rgba(255,255,255,0.9)
+    display: flex
+    justify-content: center
+    .logo
+        height: 180px
+        width: 200px
+        img
+            width: 100%
+
+
+.main-content
+    border-radius: 1rem
+    padding: 1rem
+    background: rgba(255,255,255,0.9)
+    box-shadow: 3px 3px 0.1rem rgba(#ffa800,0.5),5px 5px 1px rgba(#000,0.3),7px 7px 0.3rem rgba(#ffb11c,1),9px 9px 2px rgba(#000,0.5),11px 11px 0.3rem rgba(#ffb11c,1),13px 13px 0.1rem rgba(#ffa800,0.5)
+    width: 600px
+    height: 300px
+    position: absolute
+    top: 60%
+    left: 50%  
+    transform: translate(-50%,-60%)
+    text-align: center
+    transition: all 0.5s ease
+    h1
+        font-size: 3rem
+        span
+            font-weight: bold
+            color: #ffa800
+
+    .navigation
+        margin-top: 2rem
+        span
+            padding: 1rem
+            display: inline-block
+        a
+            text-decoration: none
+            display: inline-block
+            padding: 1rem
+            background: #ffa800
+            color: #fff
+            width: 150px
+            border: 1px solid #fff
+            transition: all 0.5s ease
+            &:hover
+                background: rgba(#ffa800,0.5)
+
+    &:hover
+        background: rgba(#ffa800,0.9)
+        box-shadow: 3px 3px 0.1rem rgba(#fff,1),5px 5px 1px rgba(#000,0.1),7px 7px 0.3rem rgba(#ffb11c,0.5),9px 9px 2px rgba(#000,0.4),11px 11px 0.3rem rgba(#ffb11c,1),13px 13px 0.1rem rgba(#ffa800,1)
+        color: #fff
+        h1
+            span
+                color: #000
+                text-shadow: 3px 5px 22px #fff
+        .navigation
+            a
+                background: #fff
+                color: #000
+                &:hover
+                    background: rgba(#ffa800,0.5)
+                    border: 1px solid #fff
+                    color: #fff

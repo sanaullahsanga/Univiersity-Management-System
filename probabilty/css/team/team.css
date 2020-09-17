@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.group {
+  width: 1200px;
+  margin-top: 8rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  grid-gap: 2rem;
+}
+
+.group .groupMember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.group .groupMember .img {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.group .groupMember .img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.group .groupMember .info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  border: 2px solid blue;
+  border-left: 0;
+  position: relative;
+}
+
+.group .groupMember .info div {
+  position: absolute;
+  padding-left: 0.51rem;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.group .groupMember .info p {
+  padding: 1rem 0rem;
+}
+
+.group .groupMember .info p span:first-child {
+  display: inline-block;
+  width: 60px !important;
+  margin-right: 1rem;
+}
+
+.group .groupMember .info p span:last-child {
+  color: #0a91ab;
+  font-weight: bold;
+  text-align: right;
+  display: block;
+  padding-right: 1rem;
+}
+
+.groupMember:hover .img img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+/*# sourceMappingURL=team.css.map */

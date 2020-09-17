@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding-bottom: 10rem;
+}
+
+#userInputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+}
+
+.otherCharts {
+  padding: 1rem 0;
+  margin-top: 18rem;
+}
+
+.threeColumn,
+.twoColumn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.threeColumn input,
+.twoColumn input {
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+
+.threeColumn p,
+.twoColumn p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.threeColumn button,
+.twoColumn button {
+  max-width: 200px;
+}
+
+.twoColumn {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#densityChart,
+#componentChart,
+#pieChart {
+  width: 600px !important;
+  height: 600px !important;
+  display: block;
+  margin: auto;
+}
+/*# sourceMappingURL=user.css.map */
